@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nandai Tours & Travels</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🚖 Nandai Tours & Travels</h1>
+<p>Your Trusted Travel Partner</p>  
+<nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Premium Taxi Service in Pune</h2>
+
+<p>
+🚖 Airport Pickup | 🏙️ Local Taxi | 🌄 Outstation | 🏢 Corporate Booking
+</p>
+<div class="hero-buttons">
+<button onclick="bookNow()">Book Now</button>
+<button onclick="window.open('https://wa.me/917350205707')">
+    WhatsApp Booking
+</button>
+</div>
+</section>
+<section class="about">
+    <h2>Why Choose Nandai Tours & Travels?</h2>
+
+    <p>✅ Clean & Sanitized Vehicles</p>
+    <p>👨‍✈️ Professional Drivers</p>
+    <p>⏰ 24×7 Service Available</p>
+    <p>💰 Affordable Pricing</p>
+    <p>🛡️ Safe & Comfortable Journey</p>
+</section>
+
+<section id="services"class="services">
+    <h2>Our Services</h2>
+  
+    <div class="card">✈️ Airport Pickup</div>
+    <div class="card">🚖 Local Taxi</div>
+    <div class="card">🛣️ Outstation Trips</div>
+    <div class="card">🏢 Corporate Booking</div>
+</section>
+   
+<section class="vehicles">
+    <h2>Our Fleet</h2>
+    <div class="vehicle-container">
+    <div class="vehicle-card">
+        <img src="crysta.jpg" alt="Toyota Innova Crysta">
+        <h3>Toyota Innova Crysta</h3>
+    </div>
+
+    <div class="vehicle-card">
+        <img src="ertiga.jpg" alt="Maruti Ertiga">
+        <h3>Maruti Ertiga</h3>
+    </div>
+
+    <div class="vehicle-card">
+        <img src="dzire.jpg" alt="Swift Dzire">
+        <h3>Swift Dzire</h3>
+    </div>
+    </div>
+    </section>
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            ⭐⭐⭐⭐⭐
+            <p>"Excellent service. Clean car and professional driver."</p>
+            <h4>- Rahul Patil</h4>
+        </div>
+
+        <div class="testimonial-card">
+            ⭐⭐⭐⭐⭐
+            <p>"Best taxi service in Pune. Highly recommended."</p>
+            <h4>- Sneha Joshi</h4>
+        </div>
+
+        <div class="testimonial-card">
+            ⭐⭐⭐⭐⭐
+            <p>"On-time pickup and comfortable journey."</p>
+            <h4>- Amit Deshmukh</h4>
+        </div>
+
+    </div>
+</section>
+    <div class="vehicle-card">
+        <img src="crysta.jpg" alt="Toyota Innova Crysta">
+        <h3>Toyota Innova Crysta</h3>
+    </div>
+
+    <div class="vehicle-card">
+        <img src="ertiga.jpg" alt="Maruti Ertiga">
+        <h3>Maruti Ertiga</h3>
+    </div>
+
+    <div class="vehicle-card">
+        <img src="dzire.jpg" alt="Swift Dzire">
+        <h3>Swift Dzire</h3>
+    </div>
+</section>
+ 
+</section>
+<section class="booking">
+    <h2>Book Your Cab</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+        <input type="text" id="pickup" placeholder="Pickup Location" required>
+
+        <input type="text" id="drop" placeholder="Drop Location" required>
+
+        <input type="date" id="date" required>
+
+        <select id="vehicle" required>
+            <option>Select Vehicle</option>
+            <option>Innova Crysta</option>
+            <option>Maruti Ertiga</option>
+            <option>Swift Dzire</option>
+        </select>
+
+        <button type="button"onclick="sendBooking()">Book Now</button>
+    </form>
+</section>
+<section id="contact" class="contact">
+ 
+<h2>Contact Us</h2>
+
+<p>📞 +91 7350205707</p>
+<p>📍 Pune, Maharashtra</p>
+<p>📧 nandaitours@gmail.com</p>
+
+<button onclick="window.open('https://wa.me/917350205707')">
+    WhatsApp Now
+</button>
+<br><br>
+
+<button onclick="window.open('https://www.google.com/maps/search/?api=1&query=Flat+No+605+Sadguru+Krupa+Society+Jadhav+Nagar+Katraj+Pune+411046')">
+    📍 Open in Google Maps
+</button>
+</section>
+<script src="script.js"></script>
+<a href="https://wa.me/917350205707" class="whatsapp-float" target="_blank">
+    💬
+</a>
+<script src="script.js"></script>
+</body>
+</html>
