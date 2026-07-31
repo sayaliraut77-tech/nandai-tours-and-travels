@@ -5,7 +5,9 @@ const images = [
     "hero.jpg",
     "crysta.jpg",
     "ertiga.jpg",
-    "dzire.jpg"
+    "dzire.jpg",
+    "hycross.jpg"
+
 ];
 
 let current = 0;
