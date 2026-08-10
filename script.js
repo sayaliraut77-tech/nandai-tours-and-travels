@@ -28,11 +28,12 @@ function sendBooking() {
     let mobile = document.getElementById("mobile").value;
     let pickup = document.getElementById("pickup").value;
     let drop = document.getElementById("drop").value;
+    let tripType = document.getElementById("tripType").value;
     let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
     let vehicle = document.getElementById("vehicle").value;
 
-    if (name === "" || mobile === "" || pickup === "" || drop === "" || date === "" || vehicle === "Select Vehicle") {
-        alert("Please fill all details");
+    if (name === "" || mobile === "" || pickup === "" || drop === "" || tripType === "" || date === "" || time === "" || vehicle === "")
         return;
     }
 
@@ -43,7 +44,9 @@ function sendBooking() {
 📞 Mobile: ${mobile}
 📍 Pickup: ${pickup}
 🏁 Drop: ${drop}
+    Trip Type: ${tripType}
 📅 Date: ${date}
+    Time: ${time}
 🚗 Vehicle: ${vehicle}`;
 
     let url = "https://wa.me/917350205707?text=" + encodeURIComponent(message);
