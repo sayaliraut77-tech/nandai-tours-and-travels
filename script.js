@@ -33,23 +33,35 @@ function sendBooking() {
     let time = document.getElementById("time").value;
     let vehicle = document.getElementById("vehicle").value;
 
-    if (name === "" || mobile === "" || pickup === "" || drop === "" || tripType === "" || date === "" || time === "" || vehicle === "")
+    if (
+        name === "" ||
+        mobile === "" ||
+        pickup === "" ||
+        drop === "" ||
+        tripType === "" ||
+        date === "" ||
+        time === "" ||
+        vehicle === ""
+    ) {
+        alert("Please fill all details");
         return;
     }
 
     let message =
-`🚖 New Cab Booking
+`🚕 New Cab Booking
 
 👤 Name: ${name}
 📞 Mobile: ${mobile}
 📍 Pickup: ${pickup}
-🏁 Drop: ${drop}
-    Trip Type: ${tripType}
+📍 Drop: ${drop}
+🔄 Trip Type: ${tripType}
 📅 Date: ${date}
-    Time: ${time}
-🚗 Vehicle: ${vehicle}`;
+⏰ Time: ${time}
+🚘 Vehicle: ${vehicle}`;
 
-    let url = "https://wa.me/917350205707?text=" + encodeURIComponent(message);
+    let url =
+        "https://wa.me/917350205707?text=" +
+        encodeURIComponent(message);
 
     window.open(url, "_blank");
 }
